@@ -1,0 +1,184 @@
+/* Global Styles */
+body {
+  background-color: #f4f7fc;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Profile Card */
+.profile-card {
+    width: 80%;
+    max-width: 445px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 33em;
+}
+
+.profile-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Header */
+.card-header {
+  background: linear-gradient(135deg, #ff7a7a, #ffb347);
+  border-radius: 15px 15px 0 0;
+  height: 100px;
+  position: relative;
+  margin-bottom: -21px;
+  margin-top: -21px;
+}
+
+/* Profile Picture */
+.profile-pic-container {
+  position: absolute;
+  top: 70px; /* Adjusted positioning to reduce the gap */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border: 5px solid #fff; /* White border for separation */
+  border-radius: 50%; /* Circular image */
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow */
+}
+
+/* Badge on Profile Picture */
+.badge {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  background: #4caf50;
+  color: #fff;
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card Body */
+.card-body {
+  padding-top: 60px; /* Adjusted to align content below the image */
+  padding-bottom: 18px; /* Proper padding at the bottom */
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0; /* Removed unnecessary margin */
+}
+
+.username {
+  color: #777;
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.experience {
+  color: #555;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Social Media Icons */
+.social-icons {
+
+  flex-wrap: wrap;
+
+}
+
+.social-icons .icon {
+  font-size: 1.2rem;
+  color: #555;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons .icon:hover {
+  color: #ff6a00;
+  transform: scale(1.1);
+}
+
+/* Details Section */
+.details p {
+  color: #555;
+  font-size: 0.9rem;
+  margin: 8px 0;
+  text-align: left;
+}
+
+.details strong {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Buttons */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+  .follow-btn {
+    background-color: #ff6a00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 33px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 78px;
+}
+
+.follow-btn:hover {
+  background-color: #e55b00;
+}
+  .message-btn {
+    background-color: #ff6a00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 27px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease-in-out;
+    margin-right: 51px;
+}
+
+.message-btn:hover {
+  background-color: #e55b00;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .profile-card {
+    width: 90%;
+  }
+
+  .follow-btn, .message-btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
+
+
+
+.bg-success {
+  --bs-bg-opacity: 1;
+  background-color: rgb(37 167 107) !important;
+  margin-left: -105px;
+  margin-top: 150px;
+}
